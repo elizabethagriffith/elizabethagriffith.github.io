@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: darkslategrey;
+    text-align: center;
+}
+
+html, body {
+  background-color: lightgrey;
+  margin: 10px; 
+}
+
+.logo {
+  background-color: lightgrey;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.apiary{
+  display: inline-block;
+}
+
+.eglogo{
+  width: 100px;
+  height: 100px;
+}
+.scroll {
+  background-color: lightgrey;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.card {
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  background-color: lightgrey;
+}
+
+nav {
+      background-color: lightgrey;
+}
+
+article {
+      background-color: lightgrey;
+}
+footer{
+  background-color: lightpink;
+}
