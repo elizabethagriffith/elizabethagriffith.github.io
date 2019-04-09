@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start; 
+    font-size: 2em;
+    color: darkslategrey;
+    text-align: center;
+    background-image: url("backgroundplaceholder.jpg");
+     /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html, body {
+  background-color: darkgrey; 
+  height: 100%;
+}
+
+.image{
+  /* The image used */
+  background-image: url("backgroundplaceholder.jpg");
+}
+
+.logo {
+  /* background-color: darkgrey; */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+ .button {
+  background-color: black; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button2 {
+  background-color: black; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button3 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} 
+
+/* .button4 {
+  background-color: pink; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button5 {
+  background-color: pink; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */
+
+button:hover{
+  color: darkgrey;
+  animation: pulse 1s infinite;
+  -webkit-animation: pulse 1s infinite;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover 
+{
+   color: white; 
+   text-decoration:none; 
+   cursor:pointer;  
+}
+
+.apiary{
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+}
+
+.ruler{
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+}
+
+.bodoni{
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+}
+
+.soup{
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+}
+
+/* .eglogo{
+  width: 100px;
+  height: 100px;
+} */
+.scroll {
+  background-color: darkgrey;
+  /* overflow-x: scroll; */
+  /* overflow-y: hidden; */
+  white-space: nowrap;
+  height: 650px;
+}
+.card {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: darkgrey;
+}
+
+ nav {
+ background-color: darkgrey;
+}
+
+article {
+  /* display: inline-block;
+  justify-content: center; 
+  align-items: flex-start; 
+  font-size: 2em;
+  color: darkslategrey;
+  text-align: center; */
+  border-style: solid;
+  border-width: 5px;
+  font-size: 3em;
+  color: black;
+  margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+footer{
+  background-color: lightpink;
+} 
