@@ -1,0 +1,24 @@
+    
+/* @media (min-width: 600px) {
+    .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+          "h h h h h h h h h"
+          "s s s m m m m m m"
+          "f f f f f f f f f";
+    }
+} */
+
+/* @media is how we make grids responsive, how we define different settings based on pixel dimension. */
+/* when the screen is 750 px or bigger, do the following grid system */
+/* @media (min-width: 750px) { */
+   
+/* can add periods rather than letters to create negative space */
+    /* .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: 28% auto 7%;
+        grid-template-areas: 
+          "h h h h h h h h h"
+          "m m m m m m m m m";
+    }
+} */
