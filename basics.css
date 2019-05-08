@@ -1,120 +1,69 @@
+/* button styling, all pages */
+
+.logo-image{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+nav {
+  display: flex;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  position: sticky;
+}
+
+nav a:hover{
+  color: lightgrey;
+}
+
+.button1, .button2, .button3, .button4{
+  padding-top: 20px; 
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position:sticky;
+}
+
+/* index.html styling */
+
 body {
-    display: flex;
-    /* justify-content: center; */
+    display: block;
     align-items: flex-start; 
     font-size: 2em;
     color: darkslategrey;
-    text-align: center;
     background-image: url("photos/backgroundplaceholder.jpg");
      /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+@media (min-width: 900px) {
+  body{
+  background-repeat: repeat-y;
+  }
 }
 
-.eglogo{
-  height: 100px;
-  width: 100px;
-  top:0; 
-  left:0;
-}
-
-html, body {
-  background-color: darkgrey; 
-  height: 100%;
-}
-
-.image{
-  /* The image used */
-  background-image: url("backgroundplaceholder.jpg");
-}
-
-.button1{
-  padding: 30px; 
-}
-
-.button2{
-  padding: 30px; 
-}
-
-.button3{
-  padding: 30px; 
-}
-
-.button4{
-  padding: 30px; 
-}
-
-a {
+.button1, .button2, .button3, .button4 {
   color: white;
   text-decoration: none;
 }
 
-a:hover 
-{
-   color: white; 
-   text-decoration:none; 
-   cursor:pointer;  
-}
-
-.apiary{
-  display: inline-block;
-  width: 300px;
-  height: 600px;
-}
-
-.ruler{
-  display: inline-block;
-  width: 300px;
-  height: 600px;
-}
-
-.bodoni{
-  display: inline-block;
-  width: 300px;
-  height: 600px;
-}
-
-.soup{
-  display: inline-block;
-  width: 300px;
-  height: 600px;
-}
-
-
-/* .card {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  background-color: darkgrey;
-} */
-
- nav {
-  /* width: 100%; */
-  display: block;
-  /* float: left; */
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 25px;
-  background-color: black;
-  color: white;
- padding-top: 20px;
- padding-right: 10px;
- padding-bottom: 10px;
- padding-left: 10px;
- text-decoration: none;
- overflow: hidden;
-}
-
-nav a:hover{
-  animation: pulse 1s infinite;
-  -webkit-animation: pulse 1s infinite;
-}
-
-h1 {
-  font-size: 70px;
+.home {
+  font-size: 100px;
   border-style: solid;
   border-width: 5px;
   color: black;
@@ -126,54 +75,81 @@ h1 {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   font-family: 'Abril Fatface', cursive;
+  letter-spacing: 5px;
 }
 
-h2{
-  font-size: 10px;
-  color: black;
-  margin: 0;
+.dac{
   position: absolute;
-  top: 60%;
-  left: 60%;
-  margin-right: -53%;
-  transform: translate(-53%, -53%);
-  font-family: 'Abril Fatface', cursive;
-}
-
-#logo {
-   padding-left: 250px;
-   padding-right: 250px;
-   margin-right: 10px;
-   margin-top: -20px;
-   }
-
-/* .name{
-  border-style: solid;
-  border-width: 5px;
-  font-size: 3em;
-  color: black;
-  margin: 0;
-  position: absolute;
-  top: 50%;
+  padding: 15px;
+  top: 70%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 45px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* projects page styling */
+
+p.projectparagraph{
+  display: block;
+  height: 100px;
+  width: 100%;
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
+  padding-top: 150px;
+  text-align: center;
+}
+
+div.gallery {
+  margin: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+  /* width: 400px; */
+}
+
+#pics{
+  width: 400px;
+}
+
+ /* .gallery{
+  width: 400px;
 } */
 
-/* .home {
-  border-style: solid;
-  border-width: 5px;
-  font-size: 3em;
-  color: black;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Abril Fatface', cursive;
-} */
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+} 
+
+/* about me page styling */
+
+@media (min-width: 900px) {
+  .myphoto{
+  width: 200px;
+  height: auto;
+  }
+}
+
+.myphoto {
+  display: inline-block;
+  width: 400px;
+  padding-right: 50px;
+}
 
 .aboutme{
   font-size: 30px;
@@ -184,47 +160,102 @@ h2{
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  padding-right: 50px;
+  padding-left: 50px;
 }
+
+.aboutmetext{
+  padding-left: 30px;
+  padding-top: 50px;
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* resume page styling */
+
+.resumelink{
+  text-decoration: none;
+  color: black;
+}
+
+.resumelink :hover{
+  color: darkslategray;
+}
+
+.header, .main, .info{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.info{
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.colors{
+  color: black;
+}
+
+#address{
+  font-size:18px;
+  font-weight: 400;
+}
+
+.edu, .work, .projects, .resumeheaderssize{
+  font-size: 30px;
+}
+
+#graphicdesigner{
+font-size: 31px;
+} 
+
+/* grid css */
 
 * {box-sizing: border-box;}
 
-
 /* all the divs that are inside wrapper */
 .wrapper > div {
-    /* border: 2px solid black; */
     border-radius: 1px;
-    background-color: paleturquoise;
     padding: 50px;
 }
 
-header{
-    font-family: 'Ovo', serif;
-    font-size: 25px;
-}
-
-li{ 
-    font-family: 'ovo', sans-serif;
-}
-
-/* assigning areas for the grid */
-.nav{
+/* assigning areas for the grid for index */
+nav {
     grid-area: n;
 }
 
-.header {
+header {
     grid-area: h;
 }
 
-/* where you set up the grid, will appear when the screen is 750 px or smaller */
 .wrapper {
     margin: 0 auto;
     display: grid;
     /* building three rows */
-    grid-auto-rows: 15% auto auto 7%;
-    grid-template-columns: 1fr;
-    /* using four rows */
+    /* grid-auto-rows: 15% auto auto 7%; */
+    /* grid-template-columns: 1fr; */
     grid-template-areas: 
-      "n"
-      "h";
+      "n n n"
+      ". h .";
 }
 
+/* assigning areas for the grid for projects */
+nav {
+  grid-area: n;
+}
+
+h1 {
+  grid-area: h;
+}
+
+.projectspage {
+  margin: 0 auto;
+  display: grid;
+  /* building three rows */
+  /* grid-auto-rows: 15% auto auto 7%; */
+  /* grid-template-columns: 1fr; */
+  grid-template-areas: 
+    "n n n"
+    ". h .";
+}
